@@ -44,7 +44,7 @@ In our example, we used all three of them, to collect, store and present AI data
 
 __*This configuration assumes you are connected to dCloud PCCE 12.5 V2 demo instance! In case you are using pre-configured GoogleCCAI4ECEmail dCloud instance, you can go straight to Service Installation steps*__
 
-1. In order to use ECE Interaction APIs in your application/service, the user authentication must be used. Check [__ECE Interaction API Developers Guide__](https://developer.cisco.com/docs/enterprise-chat-and-email/#!interaction-api-developer-guide). For that purpose, you should make sure that parameter __"Administration/Partition/Security/SSO and Provisioning/SSO Configuration/Agent Configuration/Allow local login for specific users"__ has value __"Yes"__.
+1. In order to use ECE Interaction APIs in your application/service, the user authentication must be used. Check [__ECE Interaction API Developers Guide__](https://developer.cisco.com/docs/enterprise-chat-and-email/#!interaction-api-developer-guide). For that purpose, you should make sure that parameter __Administration/Partition/Security/SSO and Provisioning/SSO Configuration/Agent Configuration/Allow local login for specific users__ has value __Yes__.
 <br/>
 
 2. Create new or use an available existing agent within [__Unified Contact Center Enterprise Management/User Setup/Agents__](https://ccedata.dcloud.cisco.com/cceadmin/#/overview), making sure it is not SSO enabled, and that it can login directly into ECE agent interface with user name and password set in the setup. This agent would be your API user, and you would also set up __ECE_USER_NAME__ and __ECE_USER_PASSWORD__ values in [__.env file__](./env) accordingly.
