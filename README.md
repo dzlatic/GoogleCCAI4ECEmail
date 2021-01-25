@@ -20,7 +20,7 @@ From this, we can see that this is about finance & lending, so [Google CCAI Text
 
 The intent, per model loaded in PCCE 12.5 V2 dCloud demo, was recognized as __"rate"__ and captured in __AiIntent__ field, using [DialogFlow API](https://cloud.google.com/dialogflow/es/docs/reference/rest/v2-overview). 
 
-Finally, as the email is quite negative in its narrative, [Google Sentiment Analisys](https://cloud.google.com/natural-language/docs/sentiment-tutorial), that is also part of [Google NLP API](https://cloud.google.com/natural-language),  returned __AiSentiment__ as __"-40/120"__ shere __"-40"__ is sentiment __score__ and __"120"__ is sentiment __magnitude__. Keep in mind that Google results are comming in [-1, 1]
+Finally, as the email is quite negative in its narrative, [Google Sentiment Analisys](https://cloud.google.com/natural-language/docs/sentiment-tutorial), that is also part of [Google NLP API](https://cloud.google.com/natural-language),  returned __AiSentiment__ as __"-40/120"__ where __"-40"__ is sentiment __score__ and __"120"__ is sentiment __magnitude__. Keep in mind that Google results are comming in [-1, 1]
 floating point interval, but here are scaled to [-100, 100] integer interval, due to ECE custom data requirements.
 
 When started, the service first connects using [__ECE REST API__](https://developer.cisco.com/docs/enterprise-chat-and-email/#!interaction-api-developer-guide) and establishes the secure session, so that it can use the ECE Interaction API to obtain the text of email content, cache it, and then  use it for Google CCAI API calls. Also, API calls to Google CCAI are cached as well.
