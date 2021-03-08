@@ -107,3 +107,5 @@ Leave all unspecified parameters on default values. We are not going to use thos
 
 6. In root of the deployment directory run __npm install__. Once all dependencies are installed, run __npm start__.
 
+## <span style="color:red">Please be aware that this is not ready to use solution, Quality of Google CCAI APIs should be tested in perticlular context, also adding some additional code to handle various Google CCAI exceptions should be anticipated. Make sure you test first the responces you are getting before using this in any demo!!!</span>
+
